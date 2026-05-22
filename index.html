@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GamerStake</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎮 GamerStake</h1>
+    <p>Challenge players. Bet safely. Win big.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Create a Match Bet</h2>
+
+      <input type="text" id="player1" placeholder="Player 1 username"/>
+      <input type="text" id="player2" placeholder="Player 2 username"/>
+      <input type="number" id="amount" placeholder="Bet amount ($)"/>
+
+      <button onclick="createBet()">Create Bet</button>
+    </section>
+
+    <section class="card">
+      <h2>Active Bets</h2>
+      <ul id="betList"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
